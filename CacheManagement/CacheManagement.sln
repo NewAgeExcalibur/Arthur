@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Domain", "CacheManagement.Domain\CacheManagement.Domain.csproj", "{59EDEB39-B25A-4F21-A33F-D1A45AB255C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Application", "CacheManagement.Application\CacheManagement.Application.csproj", "{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9} = {59EDEB39-B25A-4F21-A33F-D1A45AB255C9}
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6} = {FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CacheManagement.Presentation", "CacheManagement.Presentation", "{C73BFA01-10C5-4400-AFEA-F893AFC68E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Infrastructure", "CacheManagement.Infrastructure\CacheManagement.Infrastructure.csproj", "{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Presentation.Web", "CacheManagement.Presentation.Web\CacheManagement.Presentation.Web.csproj", "{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9} = {59EDEB39-B25A-4F21-A33F-D1A45AB255C9}
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6} = {FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5} = {0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Presentation.Win", "CacheManagement.Presentation.Win\CacheManagement.Presentation.Win.csproj", "{B251DC92-8569-40AE-A5EB-13F6FA82F9E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9} = {59EDEB39-B25A-4F21-A33F-D1A45AB255C9}
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6} = {FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5} = {0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CacheManagement.Test", "CacheManagement.Test", "{7274A43A-3DF0-428C-A337-D49184AB0249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.DependencyResolution", "CacheManagement.DependencyResolution\CacheManagement.DependencyResolution.csproj", "{18D7E7A7-2482-4284-BB33-80F91F52875B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9} = {59EDEB39-B25A-4F21-A33F-D1A45AB255C9}
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6} = {FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5} = {0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EDEB39-B25A-4F21-A33F-D1A45AB255C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB353F8-599A-4141-AFF3-9FF3C50D1EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0566F4-AC4C-4DD2-8943-ED6E3233A9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B251DC92-8569-40AE-A5EB-13F6FA82F9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B251DC92-8569-40AE-A5EB-13F6FA82F9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B251DC92-8569-40AE-A5EB-13F6FA82F9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B251DC92-8569-40AE-A5EB-13F6FA82F9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D7E7A7-2482-4284-BB33-80F91F52875B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D7E7A7-2482-4284-BB33-80F91F52875B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D7E7A7-2482-4284-BB33-80F91F52875B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D7E7A7-2482-4284-BB33-80F91F52875B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75F48B24-9419-44B7-B9A7-5BE4FF5F7A34} = {C73BFA01-10C5-4400-AFEA-F893AFC68E77}
+		{B251DC92-8569-40AE-A5EB-13F6FA82F9E0} = {C73BFA01-10C5-4400-AFEA-F893AFC68E77}
+	EndGlobalSection
+EndGlobal
