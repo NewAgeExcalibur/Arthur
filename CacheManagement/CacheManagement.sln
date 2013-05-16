@@ -11,6 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.UI.Web", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Infra", "Infra\CacheManagement.Infra\CacheManagement.Infra.csproj", "{C253BB61-C074-4CCB-BBD3-7E640DF0EE9B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E0D7CE05-8A7D-49BE-967E-4083B0F4CAFF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7BB8EA40-ACAA-4BF8-B1EA-150953492659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheManagement.Core.Test", "Test\CacheManagement.Core.Test\CacheManagement.Core.Test.csproj", "{D4CD7836-8EBD-456B-A379-9ECA43487CDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +44,10 @@ Global
 		{C253BB61-C074-4CCB-BBD3-7E640DF0EE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C253BB61-C074-4CCB-BBD3-7E640DF0EE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C253BB61-C074-4CCB-BBD3-7E640DF0EE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CD7836-8EBD-456B-A379-9ECA43487CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CD7836-8EBD-456B-A379-9ECA43487CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CD7836-8EBD-456B-A379-9ECA43487CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CD7836-8EBD-456B-A379-9ECA43487CDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +55,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{47E26058-3E49-4287-B60B-D799F334F13A} = {757830B6-56F3-4041-B1A8-50C4FCC4E963}
 		{E734FD5C-9051-4456-9C0A-55EFCB4C2289} = {757830B6-56F3-4041-B1A8-50C4FCC4E963}
+		{D4CD7836-8EBD-456B-A379-9ECA43487CDD} = {7BB8EA40-ACAA-4BF8-B1EA-150953492659}
 	EndGlobalSection
 EndGlobal
