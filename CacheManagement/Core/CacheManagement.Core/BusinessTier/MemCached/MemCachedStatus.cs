@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CacheManagement.Core.BusinessTier.MemeCached
+namespace CacheManagement.Core.BusinessTier.MemCached
 {
     public class MemeCachedStatus : CacheStatus
     {
