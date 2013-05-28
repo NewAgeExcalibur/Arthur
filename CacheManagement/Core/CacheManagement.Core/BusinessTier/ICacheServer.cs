@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier
 {
-    interface ICacheServer 
+    public interface ICacheServer 
     {
         IConnection Connection { get; }
         string ServerName { get; }

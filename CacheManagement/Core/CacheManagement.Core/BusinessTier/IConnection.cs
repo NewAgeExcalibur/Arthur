@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier
 {
-    interface IConnection
+    public interface IConnection
     {
         IPEndPoint ServerEndPoint { get; }
     }

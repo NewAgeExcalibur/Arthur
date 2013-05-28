@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CacheManagement.Core.BusinessObject
+namespace CacheManagement.Core.BusinessTier
 {
-    public interface IUser
+    public interface ICacheClient
     {
+        List<CacheStatus> GetStatus(ICacheServer server);
     }
 }

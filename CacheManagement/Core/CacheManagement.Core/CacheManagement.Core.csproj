@@ -62,15 +62,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessTier\ICacheClient.cs" />
     <Compile Include="BusinessTier\ICacheServer.cs" />
     <Compile Include="BusinessTier\IConnection.cs" />
     <Compile Include="BusinessTier\IFarm.cs" />
-    <Compile Include="BusinessTier\IStatus.cs" />
-    <Compile Include="BusinessTier\IUser.cs" />
+    <Compile Include="BusinessTier\MemeCache\MemeCacheClient.cs" />
+    <Compile Include="BusinessTier\MemeCache\MemeCacheServer.cs" />
+    <Compile Include="BusinessTier\MemeCache\MemeCacheStatus.cs" />
+    <Compile Include="BusinessTier\CacheStatus.cs" />
     <Compile Include="DataAccessTier\UserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BusinessTier\Diagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
