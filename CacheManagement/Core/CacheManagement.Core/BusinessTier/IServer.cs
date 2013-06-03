@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier
 {
-    public interface IFarm 
+    public interface IServer 
     {
-        List<IServer> ServerCollection { get; }
+        IConnection Connection { get; }
 
-        string FarmName { get; }
+        string ServerName { get; }
+
+        long Capacity { get; }
     }
 }

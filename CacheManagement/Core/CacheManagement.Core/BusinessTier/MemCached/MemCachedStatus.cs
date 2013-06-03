@@ -8,11 +8,8 @@ namespace CacheManagement.Core.BusinessTier.MemCached
 {
     public class MemeCachedStatus : CacheStatus
     {
-        //could we move it to to another object ???
         public string Version { get; private set; }
-
         public int Uptime { get; private set; }
-
         public long CurrentItems { get; private set; }
         public long TotalItems { get; private set; }
         public long UsedBytes { get; private set; }

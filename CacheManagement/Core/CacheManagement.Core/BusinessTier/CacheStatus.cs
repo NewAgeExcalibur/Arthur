@@ -8,9 +8,9 @@ namespace CacheManagement.Core.BusinessTier
 {
     public abstract class CacheStatus
     {
-        public int Port { get; private set; }
+        public IConnection Connection { get; private set; }
 
-        public string Capacity { get; private set; }
+        public string UsageVolume { get; private set; }
 
         public string MissHits { get; private set; }
 

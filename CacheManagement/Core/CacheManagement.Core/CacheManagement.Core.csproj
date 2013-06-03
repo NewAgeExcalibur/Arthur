@@ -62,13 +62,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessTier\ICacheClient.cs" />
-    <Compile Include="BusinessTier\ICacheServer.cs" />
+    <Compile Include="BusinessTier\IFarmStatus.cs" />
+    <Compile Include="BusinessTier\IRecoverService.cs" />
+    <Compile Include="BusinessTier\IServer.cs" />
     <Compile Include="BusinessTier\IConnection.cs" />
     <Compile Include="BusinessTier\IFarm.cs" />
     <Compile Include="BusinessTier\CacheStatus.cs" />
     <Compile Include="BusinessTier\MemCached\MemCachedClient.cs" />
     <Compile Include="BusinessTier\MemCached\MemCachedServer.cs" />
+    <Compile Include="BusinessTier\MemCached\MemCachedServiceEntity.cs" />
     <Compile Include="BusinessTier\MemCached\MemCachedStatus.cs" />
     <Compile Include="DataAccessTier\UserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

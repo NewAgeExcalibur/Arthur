@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier.MemCached
 {
-    public class MemeCachedClient: ICacheClient
-    {
-        #region ICacheClient Members
+    public class MemCachedFarm: IFarmStatus, IFarm
+    {      
 
-        public List<CacheStatus> GetStatus(ICacheServer server)
+        #region IFarm Members
+
+        public List<IServer> ServerCollection
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public string FarmName
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
+
+        #region IFarmStatus Members
+
+        public List<CacheStatus> GetStatus<T>() where T : IFarm
         {
             throw new NotImplementedException();
         }

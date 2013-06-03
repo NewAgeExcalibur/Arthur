@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier.MemCached
 {
-    class MemeCachedServer : IServer
+    public class MemCachedServiceEntity : IRecoverService , IServer
     {
+        #region IRecoverService Members
+
+        public bool IsRecoverable
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
 
         #region IServer Members
 

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier
 {
-    public interface ICacheServer 
+    public interface IRecoverService
     {
-        IConnection Connection { get; }
-        string ServerName { get; }
-
+        bool IsRecoverable { get; }
     }
 }

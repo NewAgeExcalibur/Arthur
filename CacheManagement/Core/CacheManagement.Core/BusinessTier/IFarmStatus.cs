@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CacheManagement.Core.BusinessTier
 {
-    public interface ICacheClient
+    public interface IFarmStatus
     {
-        List<CacheStatus> GetStatus(ICacheServer server);
+        List<CacheStatus> GetStatus<T>() where T : IFarm;
+
     }
 }
